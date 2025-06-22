@@ -1,12 +1,83 @@
-# React + Vite
+# 🛍️ Item Listing Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React-based web application built as part of the internship assignment for **AMRR TechSols Pvt Ltd**. The app allows users to add new items and view a list of items, with functionality to view item details and send enquiries via email.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Click here to view the live project](https://list-products-lac.vercel.app/)
 
-## Expanding the ESLint configuration
+## 📸 Enquiry Email Screenshot
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Here’s an example of the enquiry email sent using **EmailJS**:
+
+![EmailJS Enquiry Email Screenshot](https://raw.githubusercontent.com/reet9065/list_products/refs/heads/main/src/assets/Emailtemplate_screenshot.jpeg)
+
+## 📂 Project Features
+
+### ✅ Core Features
+
+- **Add Item Page**
+  - A form to add new items with the following fields:
+    - Item Name
+    - Item Type (e.g., Shirt, Pant, Shoes, Sports Gear, etc.)
+    - Item Description
+    - Item Cover Image
+    - Additional Images
+  - Displays a success message on successful addition.
+
+- **View Items Page**
+  - Displays all items with their name and cover image.
+  - Clickable items open a detailed modal view.
+
+- **Item Detail Modal**
+  - Shows full description
+  - Displays images in a carousel
+  - Includes an "Enquire" button to send an email
+
+### ⭐ Bonus Features Implemented
+
+- ✅ **Email Integration using [EmailJS](https://www.emailjs.com/)**  
+  On clicking **"Enquire"**, an email is sent with the product name and user's email directly — no backend needed.
+
+
+## 📦 Tech Stack
+
+- **Frontend**: React (Vite)
+- **Email**: [EmailJS](https://emailjs.com)
+- **Deployment**: [Vercel](https://vercel.com)
+
+
+## 🛠 How to Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/reet9065/list_products.git
+   cd list_products
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the dev server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Visit: `http://localhost:5173`
+
+## 📧 Email Enquiry Implementation (via EmailJS)
+
+Used **EmailJS** to send enquiry emails from the frontend only.
+
+* When the user clicks on **"Enquire"**, they are asked for their email.
+* An email is sent to a predefined static email address with:
+
+  * User’s email
+  * Product name
+
+> ✅ No backend needed — fully handled on the client using EmailJS.
