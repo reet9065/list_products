@@ -1,6 +1,6 @@
 # 🛍️ Item Listing Web App
 
-This is a simple React-based web application built as part of the internship assignment for **AMRR TechSols Pvt Ltd**. The app allows users to add new items and view a list of items, with functionality to view item details and send enquiries via email.
+
 
 ## 🚀 Live Demo
 
